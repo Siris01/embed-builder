@@ -472,12 +472,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: 1rem;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
 .flex {
   display: flex;
 }
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -488,8 +500,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .bg-\[\#2f3136\] {
@@ -497,17 +517,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(47 49 54 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#00ffaa\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 255 170 / var(--tw-bg-opacity));
-}
-
 .p-4 {
   padding: 1rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.align-text-bottom {
+  vertical-align: text-bottom;
 }
 
 .text-4xl {
@@ -519,9 +542,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 600;
 }
 
-.text-blue-600 {
+.text-red-500 {
   --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -529,12 +552,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 * {
-  font-family: 'Whitney', sans-serif;
+  font-family: 'Cabin', sans-serif;
   background-color: rgb(54, 57, 63);
 }
