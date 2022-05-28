@@ -1,39 +1,43 @@
 {
-  "name": "embed-builder",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@mantine/core": "^4.2.6",
-    "@mantine/dates": "^4.2.6",
-    "@mantine/dropzone": "^4.2.6",
-    "@mantine/form": "^4.2.6",
-    "@mantine/hooks": "^4.2.6",
-    "@mantine/modals": "^4.2.6",
-    "@mantine/next": "^4.2.6",
-    "@mantine/notifications": "^4.2.6",
-    "@mantine/prism": "^4.2.6",
-    "@mantine/rte": "^4.2.6",
-    "dayjs": "^1.11.2",
-    "next": "12.1.6",
-    "react": "18.1.0",
-    "react-dom": "18.1.0"
-  },
-  "devDependencies": {
-    "@types/node": "17.0.35",
-    "@types/react": "18.0.9",
-    "@types/react-dom": "18.0.5",
-    "autoprefixer": "^10.4.7",
-    "eslint": "8.16.0",
-    "eslint-config-next": "12.1.6",
-    "postcss": "^8.4.14",
-    "prettier": "^2.6.2",
-    "tailwindcss": "^3.0.24",
-    "typescript": "4.7.2"
-  }
+	"name": "embed-builder",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"next:dev": "next dev",
+		"tw:dev": "npx tailwindcss -i ./styles/tw.css -o ./styles/globals.css --watch",
+		"dev": "run-p tw:dev next:dev",
+		"build": "npx tailwindcss -i ./styles/tw.css -o ./styles/globals.css --minify && next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@mantine/core": "^4.2.6",
+		"@mantine/dates": "^4.2.6",
+		"@mantine/dropzone": "^4.2.6",
+		"@mantine/form": "^4.2.6",
+		"@mantine/hooks": "^4.2.6",
+		"@mantine/modals": "^4.2.6",
+		"@mantine/next": "^4.2.6",
+		"@mantine/notifications": "^4.2.6",
+		"@mantine/prism": "^4.2.6",
+		"@mantine/rte": "^4.2.6",
+		"dayjs": "^1.11.2",
+		"next": "12.1.6",
+		"react": "18.1.0",
+		"react-dom": "18.1.0",
+		"superjson": "^1.9.1"
+	},
+	"devDependencies": {
+		"@types/node": "17.0.35",
+		"@types/react": "18.0.9",
+		"@types/react-dom": "18.0.5",
+		"autoprefixer": "^10.4.7",
+		"eslint": "8.16.0",
+		"eslint-config-next": "12.1.6",
+		"npm-run-all": "^4.1.5",
+		"postcss": "^8.4.14",
+		"prettier": "^2.6.2",
+		"tailwindcss": "^3.0.24",
+		"typescript": "4.7.2"
+	}
 }
