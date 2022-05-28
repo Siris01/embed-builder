@@ -22,15 +22,17 @@
 		"@mantine/prism": "^4.2.6",
 		"@mantine/rte": "^4.2.6",
 		"dayjs": "^1.11.2",
+		"highlight.js": "^11.5.1",
 		"next": "12.1.6",
 		"react": "18.1.0",
 		"react-dom": "18.1.0",
-		"superjson": "^1.9.1"
+		"use-local-storage-state": "^17.2.0"
 	},
 	"devDependencies": {
 		"@types/node": "17.0.35",
 		"@types/react": "18.0.9",
 		"@types/react-dom": "18.0.5",
+		"@types/remarkable": "^2.0.3",
 		"autoprefixer": "^10.4.7",
 		"eslint": "8.16.0",
 		"eslint-config-next": "12.1.6",
