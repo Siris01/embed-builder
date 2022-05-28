@@ -24,33 +24,32 @@ const Content = () => {
 					setContent(value);
 				}}
 				title='Content'
-				children={
-					<>
-						<Textarea
-							autosize
-							placeholder='Enter content here'
-							value={content}
-							data-autofocus
-							onChange={(e) => setContent(e.target.value)}
-							error={
-								content.length > 2000 ? `Content exceeds maximum limit by ${content.length - 2000} characters` : false
-							}
-						/>
-						<Button
-							color={'indigo'}
-							fullWidth
-							disabled={content.length > 2000}
-							onClick={() => {
-								setOpened(false);
-								setValue(content);
-							}}
-							mt={'md'}
-						>
-							Submit
-						</Button>
-					</>
-				}
-			/>
+			>
+				<>
+					<Textarea
+						autosize
+						placeholder='Enter content here'
+						value={content}
+						data-autofocus
+						onChange={(e) => setContent(e.target.value)}
+						error={
+							content.length > 2000 ? `Content exceeds maximum limit by ${content.length - 2000} characters` : false
+						}
+					/>
+					<Button
+						color={'indigo'}
+						fullWidth
+						disabled={content.length > 2000}
+						onClick={() => {
+							setOpened(false);
+							setValue(content);
+						}}
+						mt={'md'}
+					>
+						Submit
+					</Button>
+				</>
+			</Modal>
 			<div
 				onClick={() => setOpened(true)}
 				className={`break-all whitespace-pre-line mb-4 ${value ? 'text-white' : 'text-[#C7C7CD]'}`}

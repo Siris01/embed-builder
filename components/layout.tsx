@@ -1,5 +1,6 @@
 import Content from './content';
 import Embed from './embed';
+import Image from 'next/image';
 
 const Builder = () => {
 	const date = () => {
@@ -11,10 +12,11 @@ const Builder = () => {
 		<div className='flex flex-col shadow-lg shadow-black p-4 mb-16 rounded-lg'>
 			<div className='flex flex-row justify-start m-2'>
 				<div>
-					<img
+					<Image
 						className='rounded-full p-2'
 						height={72}
 						width={72}
+						alt='user-avatar'
 						src='https://cdn.discordapp.com/embed/avatars/0.png'
 					/>
 				</div>
