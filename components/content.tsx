@@ -1,7 +1,7 @@
 import superjson from 'superjson';
 import { useLocalStorage } from '@mantine/hooks';
 
-function edit() {
+function Edit() {
 	const [value, setValue] = useLocalStorage({
 		key: 'content',
 		defaultValue: null,
