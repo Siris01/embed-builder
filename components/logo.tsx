@@ -18,12 +18,12 @@ const Logo = () => {
 					<path d='M12 19C12 15.134 15.134 12 19 12V12V277V277C15.134 277 12 273.866 12 270V19Z' fill='#FF0000' />
 				</g>
 			</g>
-			<rect x='31' y='25' width='60' height='8' rx='4' fill='black' fill-opacity='0.25' />
-			<rect x='31' y='73' width='85' height='8' rx='4' fill='black' fill-opacity='0.25' />
-			<rect x='31' y='49' width='70' height='8' rx='4' fill='black' fill-opacity='0.25' />
-			<rect x='31' y='96' width='162' height='56' rx='4' fill='black' fill-opacity='0.25' />
-			<rect x='31' y='167' width='162' height='100' rx='4' fill='black' fill-opacity='0.25' />
-			<rect x='137' y='25' width='56' height='56' rx='28' fill='black' fill-opacity='0.25' />
+			<rect x='31' y='25' width='60' height='8' rx='4' fill='black' fillOpacity='0.25' />
+			<rect x='31' y='73' width='85' height='8' rx='4' fill='black' fillOpacity='0.25' />
+			<rect x='31' y='49' width='70' height='8' rx='4' fill='black' fillOpacity='0.25' />
+			<rect x='31' y='96' width='162' height='56' rx='4' fill='black' fillOpacity='0.25' />
+			<rect x='31' y='167' width='162' height='100' rx='4' fill='black' fillOpacity='0.25' />
+			<rect x='137' y='25' width='56' height='56' rx='28' fill='black' fillOpacity='0.25' />
 			<defs>
 				<filter
 					id='filter0_dd_0_1'
@@ -32,9 +32,9 @@ const Logo = () => {
 					width='217'
 					height='289'
 					filterUnits='userSpaceOnUse'
-					color-interpolation-filters='sRGB'
+					colorInterpolationFilters='sRGB'
 				>
-					<feFlood flood-opacity='0' result='BackgroundImageFix' />
+					<feFlood floodOpacity='0' result='BackgroundImageFix' />
 					<feColorMatrix
 						in='SourceAlpha'
 						type='matrix'
