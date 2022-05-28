@@ -34,3 +34,6 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# Will be built by tailwind on prod
+styles/globals.css
