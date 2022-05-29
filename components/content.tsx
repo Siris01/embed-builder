@@ -1,7 +1,7 @@
 import { Modal, Button, Textarea } from '@mantine/core';
 import useLocalStorage from 'use-local-storage-state';
 import { useState } from 'react';
-import renderMD from '../utils/renderMarkdown';
+import render from '../utils/render';
 
 const Content = () => {
 	const [value, setValue] = useLocalStorage('content', {
@@ -54,9 +54,8 @@ const Content = () => {
 				onClick={() => setOpened(true)}
 				className={`break-all whitespace-pre-line mb-4 ${value ? 'text-white' : 'text-[#C7C7CD]'}`}
 				id='con-input'
-			>
-				{value.length ? renderMD(value) : 'Enter content here'}
-			</div>
+				dangerouslySetInnerHTML={{ __html: value.length ? render(value) : 'Enter content here' }}
+			></div>
 		</>
 	);
 };

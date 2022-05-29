@@ -9,7 +9,7 @@ const Builder = () => {
 	};
 
 	return (
-		<div className='flex flex-col shadow-lg shadow-black p-4 mb-16 rounded-lg'>
+		<div className='flex flex-col shadow-md shadow-black p-4 mb-16 rounded-lg'>
 			<div className='flex flex-row justify-start m-2'>
 				<div>
 					<Image

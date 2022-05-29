@@ -11,7 +11,7 @@ export default function Document() {
 					rel='stylesheet'
 				/>
 			</Head>
-			<body className='bg-[#202020] font-[Cabin,sans-serif]'>
+			<body className='bg-[#36393F] font-[Cabin,sans-serif]'>
 				<Main />
 				<NextScript />
 			</body>
